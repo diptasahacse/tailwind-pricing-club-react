@@ -1,5 +1,5 @@
 import React from 'react';
-import { CheckIcon, XIcon } from '@heroicons/react/solid'
+import { CheckCircleIcon, XCircleIcon } from '@heroicons/react/solid'
 
 const PricingOption = ({ option }) => {
     const { name, price, features, features_status } = option;
@@ -35,7 +35,7 @@ const MakeList = ({ element }) => {
 
     return (
         <div className='text-black flex items-center mt-3'>
-            <span className='mr-2'>{status ? <CheckIcon className='w-5 h-5 text-green-600'></CheckIcon> : <XIcon className='w-5 h-5 text-red-700'></XIcon>}</span>
+            <span className='mr-2'>{status ? <CheckCircleIcon className='w-5 h-5 text-green-600'></CheckCircleIcon> : <XCircleIcon className='w-5 h-5 text-red-700'></XCircleIcon>}</span>
             <p>{feature}</p>
         </div>
     );
