@@ -1,8 +1,8 @@
 import React from 'react';
-import { CheckCircleIcon, XCircleIcon } from '@heroicons/react/solid'
+import { ArrowNarrowRightIcon, CheckCircleIcon, XCircleIcon } from '@heroicons/react/solid'
 
 const PricingOption = ({ option }) => {
-    const { name, price, features, features_status } = option;
+    const { name, price, features, features_status,type } = option;
     let priceFeatures = [];
 
     for (let i = 0; i < features.length; i++) {
@@ -13,8 +13,9 @@ const PricingOption = ({ option }) => {
     }
 
     return (
-        <div className='text-center bg-white text-white p-3 rounded-2xl'>
-            <h3 className='bg-indigo-400 rounded font-bold text-xl py-2'>{name}</h3>
+        <div className='text-center bg-white text-white py-3 px-12 rounded-2xl'>
+            <h3 className='font-bold text-2xl text-black text-left'>{name}</h3>
+            <p className='text-black text-left'>For {type}</p>
             <p className='text-black mt-4'>
                 <span className='text-4xl font-bold'>${price}</span>
                 <span>/month</span>
@@ -25,6 +26,13 @@ const PricingOption = ({ option }) => {
                 }
 
 
+            </div>
+            <div className=''>
+                <button className='bg-indigo-400 rounded-lg py-2 flex justify-center items-center px-3 mt-4 w-full'>
+                    
+                    <span>Subscribe</span>
+                    <ArrowNarrowRightIcon className='w-5 h-5 ml-2'></ArrowNarrowRightIcon>
+                </button>
             </div>
 
         </div>

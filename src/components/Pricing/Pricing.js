@@ -3,9 +3,9 @@ import PricingOption from '../PricingOption/PricingOption';
 
 const Pricing = () => {
     const pricingOption = [
-        { id: 1, name: "Free", price: "0", features: ["Simple Text Here", "Others Text Title", "Text Space Goes Here", "Description Space"], features_status: [true, false, false, false] },
-        { id: 2, name: "Regular", price: "9.99", features: ["Simple Text Here", "Others Text Title", "Text Space Goes Here", "Description Space"], features_status: [true, true, true, false] },
-        { id: 3, name: "Premium", price: "19.99", features: ["Simple Text Here", "Others Text Title", "Text Space Goes Here", "Description Space"], features_status: [true, true, true, true] },
+        { id: 1, name: "Free", price: "0",type: "Freelancer", features: ["Simple Text Here", "Others Text Title", "Text Space Goes Here", "Description Space"], features_status: [true, false, false, false] },
+        { id: 2, name: "Regular", price: "9.99",type: "Business", features: ["Simple Text Here", "Others Text Title", "Text Space Goes Here", "Description Space"], features_status: [true, true, true, false] },
+        { id: 3, name: "Premium", price: "19.99",type: "Enterprise", features: ["Simple Text Here", "Others Text Title", "Text Space Goes Here", "Description Space"], features_status: [true, true, true, true] },
     ];
 
     
